@@ -27,13 +27,27 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+    For each performs a specific action on an array of data, not creating a new array.
+    Map creats a new array with just the objects, items that you are specifically looking for.
+
 2. Explain the difference between a callback and a higher order function.
+
+    Both are functions, but a higher order function can take a callback as an arguement.
 
 3. What is closure?
 
+    The ability to give functions access to "parent" functions, while keeping their variables, and proccesses closed off. 
+
 4. Describe the four rules of the 'this' keyword.
 
+    Global Context (Default Binding) - Refers to the global object.
+    Function Context (Implicit Binding) - Inside a function, depends on how the function is called.
+    Class Context - Similar to function context, but within a class constructor.
+    Explicit Binding - occurs when .call(), .apply(), or .bind() are applied. 
+
 5. Why do we need super() in an extended class?
+
+    When you call super() you're basically telling the class what it's inherited traits are. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
