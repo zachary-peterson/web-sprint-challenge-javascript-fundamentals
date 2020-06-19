@@ -16,7 +16,7 @@ function myFunction() {
 }
 myFunction();
 
-// Explanation: The nested function has lexical scope, meaning that it can look to the parent function where the variable internal is declared. 
+// Explanation: The nested function has lexical scope, meaning that it can look to the parent function where the variable internal is declared. myFunction would have access to the global scope as well as what is declared in the function itself, but as soon as nestedFunction() is declared, nestedFunction() forms a closure. The nestedFunction() then has access to the global scope as well as anything declared inside of myFunction(), while myFunction() has no access to anything declared inside of nestedFunction().
 
 
 /* Task 2: Counter */
@@ -26,7 +26,7 @@ myFunction();
 const summation = (a) => {  
   let counter = 0;
   let adder = a - 3;
-  for(i = 0; i < a; i++){
+  for(i = 0; i < 4; i++){
     counter = counter + adder;
     adder += 1;    
   }
